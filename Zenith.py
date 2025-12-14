@@ -192,7 +192,7 @@ def register_bot_handlers():
                 f.write(f"inline|{c_id}|{event.message_id}")
             
             await asyncio.sleep(1)
-            os.execl(sys.executable, sys.executable, "main.py")
+            os.execl(sys.executable, sys.executable, "Zenith.py")
             
         elif event.data == b'restart_no':
             await event.edit("❌ **Отменено.**")
